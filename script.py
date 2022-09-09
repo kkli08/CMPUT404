@@ -16,3 +16,10 @@ url = "http://google.com/"
 s = requests.get(url)
 print(s)
 
+
+# Downloads itself from GitHub and prints out its own source code from GitHub.
+
+url = "https://raw.githubusercontent.com/kkli08/CMPUT404/main/script.py"
+sourcecode = requests.get(url)
+print(sourcecode.text)
+
